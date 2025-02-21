@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    color: black;
+    background-color: white;
+    animation: expand 3s linear;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    header {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        background-color: #7C238C;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        color: black;
+        gap: 10px;
+    }
+    form {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            i {
+                padding: 10px;
+                background-color: #7C238C;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+            input {
+                width: 200px;
+                font-size: 20px;
+                height: 100%;
+            }
+        }
+        button {
+            margin-top: 50px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #7C238C;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            width: 200px;
+            box-shadow: 5px 5px 15px #7C238C;
+            transition: 0.2s linear;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+@keyframes expand {
+    0% {
+        width: 50px;
+        height: 10px;
+    }
+    20% {
+        height: 10px;
+        width: 100px;
+    }
+
+    30% {
+        height: 10px;
+        width: 150px;
+    }
+    40% {
+        height: 10px;
+        width: 170px;
+    }
+    50% {
+        height: 10px;
+        width: 230px;
+    }
+    60% {
+        height: 10px;
+        width: 400px;
+    }
+    70% {
+        height: 50px;
+    }
+    80% {
+        height: 100px;
+    }
+    90% {
+       height: 200px; 
+    }
+    100% {
+        height: 500px;
+    }
+}

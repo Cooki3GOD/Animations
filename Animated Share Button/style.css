@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #131313;
+}
+
+input {
+    display: none;
+}
+
+p {
+    display: none;
+}
+
+h2 {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 30px white;
+    cursor: pointer;
+    z-index: 3;
+    border: 1px solid black;
+    transition: .3s all;
+}
+
+input:checked + label {
+    
+    h2:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .top, 
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    p {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s all;
+    }
+    
+    p:hover {
+        transform: scale(1.1);
+    }
+    .top p:nth-child(1):hover {
+        background-color: blue;
+        color: white;
+    }
+    .top p:nth-child(2):hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .bottom p:nth-child(1):hover {
+        background-color: #FF00BB;
+        color: white;
+    }
+    .bottom p:nth-child(2):hover {
+        background-color: purple;
+        color: white;
+    }
+    
+     .top p:nth-child(1) {
+        top: 39%;
+        left: 44.5%;    
+        border-top-left-radius: 50px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        color: blue;
+    }
+    .top p:nth-child(2) {
+        top: 39%;
+        right: 44.5%;    
+        border-top-right-radius: 50px;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+     .bottom p:nth-child(1) {
+        bottom: 39%;
+        left: 44.5%;    
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        color: #FF00BB;
+    }
+    .bottom p:nth-child(2) {
+        bottom: 39%;
+        right: 44.5%;    
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        color: purple;
+    }
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131313;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    white-space: nowrap;
+    border-right: 1px solid;
+    overflow: hidden;
+    animation: typing 3s steps(13) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
